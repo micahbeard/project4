@@ -2,6 +2,7 @@ import port_scanner as port
 from files_sysinfo import list_info as li
 from check_perm import check
 import os
+from random_script import broken_script
 
 
 # View Files and Sys Info
@@ -48,6 +49,8 @@ while loop:
         important()
     elif script == "3":
         view_files()
+    elif script == "4":
+        broken_script()
     else:
         loop = False
 
