@@ -1,6 +1,7 @@
 import port_scanner as port
 from files_sysinfo import list_info as li
 from check_perm import check
+import os
 
 
 # View Files and Sys Info
@@ -12,6 +13,7 @@ def view_files():
 
 # port scanner
 def nmap_scan():
+    os.system("sudo apt-get install nmap")
     print("Type of Nmap scan")
     type_nmap = input("1: IP Scan \n2: IP + Port \n3: IP + Port -sS Scan \n4: Basic IP TCP Scan ")
 
